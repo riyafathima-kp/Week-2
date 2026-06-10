@@ -1,0 +1,108 @@
+:root{
+    --color-primary: #44312b;
+    --color-secondary:#8b5e3c;
+    --color-accent: #ffb347;
+
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-error: #dc3545;
+
+    --color-text: #44312b;
+    --color-bg:#fff7f2;
+
+    --primary-100: #f5ece8;
+    --primary-200: #e7d7cf;
+    --primary-300: #d5bdb0;
+    --primary-400: #b88e7a;
+    --primary-500: #44312b;
+
+    --primary-hex: #44312b;
+    --primary-rgb: rgb(68,49,43);
+    --primary-hsl: hsl(14,23%,22%);
+    --primary-oklch: oklch(0.37 0.03 35);
+}
+
+[data-theme="dark"]{
+    --color-primary: #f5ece8; 
+    --color-secondary: #d5bdb0;
+    --color-accent: #ffb347;
+
+    --color-success: #66d17a;
+    --color-warning: #ffd166;
+    --color-error: #ff8a8a;
+
+    --color-text: #f5ece8; 
+    --color-bg: #1a1412;   
+
+    --primary-100: #2c211c;
+    --primary-200: #44312b;
+    --primary-300: #8b5e3c;
+    --primary-400: #d5bdb0;
+    --primary-500: #f5ece8;
+}
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+h1 h2 h3 {
+  color: var(--color-primary);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10;
+}
+p{
+    color: var(--color-text);
+}
+
+.nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 24px;
+}
+
+.article-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.article-card {
+  background-color: var(--primary-100);
+  padding: 20px;
+  border: 1px solid var(--primary-400);
+  border-radius: 8px;
+}
+
+.blockquote-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.blockquote-card {
+  background-color: var(--primary-100);
+  padding: 20px;
+  border: 1px solid var(--primary-400);
+  border-radius: 8px;
+}
+.blockquote-card  p{
+  text-align: right;
+}
+
+footer{
+    color: var(--color-text);
+}
+
+iframe{
+    width: 100%;
+}
