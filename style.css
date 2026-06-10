@@ -1,0 +1,69 @@
+li:nth-child(2){
+    color: blueviolet;
+}
+input[type="email"]{
+    color: brown;
+    border: 2px solid brown;
+    padding: 10px;
+    border-radius: 5px;
+}
+input[type="text"]{
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.card, .featured{
+    color: darkorchid;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid grey;
+    background-color: #fff7f2;
+    margin: 10px;
+    width: 300px;
+    
+}
+article > p:first-of-type{
+    color: mediumvioletred;
+    font-weight: 600;
+    font-size: large;
+}
+h2 + p{
+    color: deeppink;
+}
+
+a:link{
+    color: #A30046;
+}
+
+a:visited {
+  color: #5C2D42;
+}
+a:hover{
+    color:forestgreen;
+
+}
+input:focus{
+    outline: 3px solid slateblue;
+}
+li:first-child{
+    color: crimson
+}
+li:nth-child(3n+1){
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li:last-child{
+    font-weight: 600;
+}
+
+#contact::after{
+    content: "Thank you for visiting";
+    
+}
+#contact a::before{
+    content: "Visit the profile: ";
+}
+#links a[href^="https://"] {
+  color: orange;
+  font-weight: bold;
+}
