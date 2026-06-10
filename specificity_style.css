@@ -1,0 +1,62 @@
+/* Specificity */
+/* (!important , inline style, id selector , class selector , element selector) */  
+
+
+/*Specificity 0-0-1 */
+p{
+    color:red
+}
+/*Specificity 0-0-2*/
+div p{
+
+    color: brown
+}
+/*Specificity 0-0-3 */
+main div p{
+    color: yellow
+}
+/*Specificity 0-1-0 */
+.text-content{
+    color:crimson
+}
+/*Specificity 0-1-1 */
+p.text-content{
+    color:purple;
+}
+/*Specificity 0-1-1 */
+.card-section p{
+    color:cadetblue
+}
+/*Specificity 0-2-0 */
+.card-section .text-content{
+    color: darkgray;
+}
+/*Specificity 0-1-2 */
+main .card-section p{
+    color: gold;
+}
+/*Specificity 0-2-0 */
+.card-section p:first-child{
+    color: mediumorchid;
+}
+/*Specificity 0-2-0 */
+.card-section p:nth-child(2){
+    color: mediumorchid;
+}
+/*Specificity 0-2-1 */
+main .card-section .text-content{
+    color: aquamarine;
+}
+/*Specificity 1-0-0*/
+#target
+{
+    color:pink;
+}
+/*Specificity 1-1-0*/
+#target:hover{
+    color:lightsalmon
+}
+/* Specificity 1-0-1-0-0*/
+#target{
+    color:darkred !important;
+}
