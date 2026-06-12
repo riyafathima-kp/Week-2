@@ -1,0 +1,78 @@
+body{
+    background-color: #ddd8f2;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    background-color: #ecebf0;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color: #5d4b8a;
+}
+.nav-links{
+    flex-grow:1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.nav-links a:focus-visible{
+    outline: 2px solid #5d4b8a;
+}
+
+
+.nav-links a:hover{
+    background-color: #c8b6ff;
+}
+
+.login-btn,.signup-btn{
+    border:none;
+    border-radius: 6px;
+}
+.login-btn{
+    background-color: #f1f1f1;
+    cursor: pointer;
+
+}
+.signup-btn{
+    background-color: #b199f1;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+    border:none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media(max-width:768px) {
+    .nav-links{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .actions{
+        margin-left: auto;
+    }
+    .login-btn, .signup-btn{
+        display: none;
+    }
+
+}
