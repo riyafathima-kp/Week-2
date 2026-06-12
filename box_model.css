@@ -1,0 +1,110 @@
+.box{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+}
+
+.box1{
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.box2{
+    background-color: lightgreen;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.box3{
+    background-color: lightcoral;
+    margin: 30px;
+}
+
+.box4{
+    background-color: khaki;
+    padding: 25px;
+    border: 4px solid blue;
+}
+
+.box5{
+    background-color: plum;
+    margin: 40px;
+    padding: 15px;
+}
+
+.box6{
+    background-color: peachpuff;
+    border: 5px solid red;
+}
+
+.box7{
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid green;
+}
+
+.box8{
+    background-color: lightpink;
+    margin: 50px;
+    padding: 25px;
+    border: 2px dashed black;
+}
+
+/* Content Box */
+
+.content-box{
+    width: 300px;
+    padding: 60px;
+    border: 10px solid red;
+    background-color: lightyellow;
+    box-sizing: content-box;
+    margin-bottom: 20px;
+}
+
+
+
+.border-box{
+    width: 300px;
+    padding: 30px;
+    border: 10px solid blue;
+    background-color: lightcyan;
+    box-sizing: border-box;
+}
+
+
+.collapse-top{
+    background-color: lightgreen;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.collapse-bottom{
+    background-color: lightblue;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+
+.base-box{
+    background-color: orange;
+    padding: 30px;
+    width: 250px;
+}
+
+.negative-box{
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    width: 250px;
+    margin-top: -40px;
+    margin-left: 60px;
+}
+
+
+
+
+
+
