@@ -1,0 +1,99 @@
+body {
+  background-color: #ddd8f2;
+  padding: 30px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  color: #4b3f72;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4b3f72;
+  padding: 10px 15px;
+  border: 2px solid #4b3f72;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background-color: #b9aedc;
+}
+
+.navbar a:focus-visible {
+  outline: 3px solid #7b68ee;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+}
+
+.checkbox-label {
+  font-size: 18px;
+}
+
+.checkbox-label::before {
+  content: "";
+  text-align: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4b3f72;
+}
+
+input[type="checkbox"]:checked + .checkbox-label::before {
+  content: "✔";
+  text-align: center;
+  background: #7b68ee;
+  color: white;
+}
+
+.custom-list {
+  list-style: none;
+  counter-reset: course-counter;
+  padding-left: 0;
+}
+
+.custom-list li {
+  counter-increment: course-counter;
+  margin: 12px 0;
+}
+
+.custom-list li::before {
+  content: counter(course-counter) ". ";
+  font-weight: bold;
+  color: #7b68ee;
+}
+
+.tooltip-btn {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #7b68ee;
+  color: white;
+}
+.tooltip-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip-btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
