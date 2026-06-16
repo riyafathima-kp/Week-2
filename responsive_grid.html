@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Grid without MediaQuery</title>
+    <link rel="stylesheet" href="responsive-grid.css" />
+  </head>
+  <body>
+    <div class="product-grid">
+      <div class="product">Product 1</div>
+      <div class="product">Product 2</div>
+      <div class="product">Product 3</div>
+      <div class="product">Product 4</div>
+      <div class="product">Product 5</div>
+      <div class="product">Product 6</div>
+      <div class="product featured">Featured Product</div>
+      <div class="product">Product 7</div>
+      <div class="product">Product 8</div>
+      <div class="product last-item">Last Item</div>
+    </div>
+
+    <h2>auto-fill vs auto-fit</h2>
+
+    <h3>auto-fill</h3>
+    <div class="grid-container auto-fill">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+      <div class="grid-item">7</div>
+    </div>
+
+    <h3>auto-fit</h3>
+    <div class="grid-container auto-fit">
+      <div class="grid-element">1</div>
+      <div class="grid-element">2</div>
+      <div class="grid-element">3</div>
+      <div class="grid-element">4</div>
+      <div class="grid-element">5</div>
+      <div class="grid-element">6</div>
+      <div class="grid-element">7</div>
+    </div>
+  </body>
+</html>
