@@ -1,79 +1,83 @@
-.grid{
-    display: grid;
-    gap: 10px;
+.grid {
+  display: grid;
+  gap: 10px;
 }
 
-.fixed-grid{
-    grid-template-columns: 200px 100px 200px;
-    grid-template-rows: 200px 100px;
+.fixed-grid {
+  grid-template-columns: 200px 100px 200px;
+  grid-template-rows: 200px 100px;
 }
 
-.fixed-item{
-    background: purple;
-    padding: 20px;
+.fixed-item {
+  background: purple;
+  padding: 20px;
 }
 
-.percentage{
-    grid-template-columns: 20% 30% 20%;
+.percentage {
+  grid-template-columns: 20% 30% 20%;
 }
 
-.percent-item{
-    background: seagreen;
-    padding: 20px;
-    border-radius: 6px;
+.percent-item {
+  background: seagreen;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-.fr-units{
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+.fr-units {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr;
 }
 
-.fr-item{
-    background: rgb(12, 96, 221);
-    padding: 20px;
-    border-radius: 6px;    
+.fr-item {
+  background: rgb(12, 96, 221);
+  padding: 20px;
+  border-radius: 6px;
 }
 
-.auto{
-    grid-template-columns: auto auto;
+.auto {
+  grid-template-columns: auto auto;
 }
-.auto-item{
-    background: rgb(153, 153, 243);
-    padding: 20px;
-    border-radius: 6px;
+.auto-item {
+  background: rgb(153, 153, 243);
+  padding: 20px;
+  border-radius: 6px;
 }
-.min-max{
-  grid-template-columns: minmax(200px,1fr) minmax(200px,1fr);
+.min-max {
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
   padding: 10px;
 }
-.minmax-item{
-    background: #8caff0;
-    padding: 20px;
-    border-radius: 6px;
+.minmax-item {
+  background: #8caff0;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-.repeat{
-    grid-template-columns: repeat(3,1fr);
+.repeat {
+  grid-template-columns: repeat(3, 1fr);
 }
-.repeat-item{
-    background: #f8b7cc;
-    padding: 20px;
-    border-radius: 6px;
+.repeat-item {
+  background: #f8b7cc;
+  padding: 20px;
+  border-radius: 6px;
 }
-.repeat-auto{
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+.repeat-auto {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.fr-ratio{
-    grid-template-columns: 1fr 2fr 1fr;
+.fr-ratio {
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-.gap{
-    grid-template-columns: auto auto;
-    row-gap: 20px;
-    column-gap: 30px;
+.auto-row {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px;
 }
-.gap-item{
-    background: #f8bbb7;
-    padding: 20px;
-    border-radius: 6px;
+.gap {
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+  column-gap: 30px;
+}
+.gap-item {
+  background: #f8bbb7;
+  padding: 20px;
+  border-radius: 6px;
 }
