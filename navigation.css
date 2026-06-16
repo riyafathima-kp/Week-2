@@ -41,17 +41,15 @@ body{
 .login-btn,.signup-btn{
     border:none;
     border-radius: 6px;
+    cursor: pointer;
 }
 .login-btn{
     background-color: #f1f1f1;
-    cursor: pointer;
-
 }
 .signup-btn{
     background-color: #b199f1;
     width: 80px;
-    height: 30px;
-    cursor: pointer;
+    height: 30px;  
 }
 .hamburger{
     display: none;
