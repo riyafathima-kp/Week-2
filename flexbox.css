@@ -1,0 +1,140 @@
+.container{
+    display: flex;
+    border: 2px solid rgb(7, 5, 88);
+    height: 100px;
+    margin-bottom:20px ;
+}
+.item{
+    width: 60px;
+    height: 60px;
+    background-color: #ddd8f2;
+    border: 1px solid #4b3f72;
+    text-align: center;
+    margin: 16px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+
+.align-container{
+    display: flex;
+    border: 2px solid rgb(7, 5, 88);
+    height: 200px;
+    margin-bottom:20px ;
+    background-color: #fff7f7;
+}
+.box{
+    width: 80px;
+    height: 60px;
+    background-color: #ecc1f5;
+    border: 1px solid #d88ae2;
+    text-align: center;
+    margin: 16px;    
+}
+.stretch{
+    align-items: stretch;
+}
+
+.start{
+    align-items: flex-start;
+}
+
+.end{
+    align-items: flex-end;
+}
+.middle{
+    align-items: center;
+}
+.small-text{
+    font-size: 30px;
+    margin: 10px;
+}
+.medium-text{
+    font-size: 40px;
+    margin: 10px;
+}
+.large-text{
+    font-size: 50px;
+    margin: 10px;
+}
+.wrap-container{
+    display: flex;
+    border: 2px solid rgb(6, 134, 13);
+    flex-wrap:wrap;
+    height: 300px;
+}
+.wrap-item{
+    width: 90px;
+    height: 60px;
+    background-color: #ddd8f2;
+    border: 1px solid #4b3f72;
+    text-align: center;
+    margin: 16px;
+       
+}
+.content-start{
+    align-content: flex-start;
+}
+.content-end{
+    align-content: flex-end;
+}
+.content-center{
+    align-content: center;
+}
+.content-between{
+    align-content: space-between;
+}
+.content-around{
+    align-content: space-around;
+}
+.content-stretch{
+    align-content: stretch;
+}
+
+.direction-container{
+    display: flex;
+    border: 2px solid rgb(2, 59, 57);
+    background-color: #cfeed2   ;
+    flex-wrap:wrap;
+    height: 200px;
+}
+.direction-item{
+    width: 90px;
+    height: 60px;
+    background-color: #d0a3f5;
+    border: 1px solid #bfb1ee;
+    text-align: center;
+    margin: 16px;
+       
+}
+.row{
+   flex-direction: row; 
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column;
+}
+.column-reverse{
+    flex-direction: column-reverse;
+}
