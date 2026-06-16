@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Demo</title>
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Grid Sizing Methods</h1>
+
+      <h2>Fixed Px</h2>
+      <div class="grid fixed-grid">
+        <div class="fixed-item">1</div>
+        <div class="fixed-item">2</div>
+        <div class="fixed-item">3</div>
+        <div class="fixed-item">4</div>
+        <div class="fixed-item">5</div>
+        <div class="fixed-item">6</div>
+      </div>
+
+      <h2>Percentage</h2>
+      <div class="grid percentage">
+        <div class="percent-item">1</div>
+        <div class="percent-item">2</div>
+        <div class="percent-item">3</div>
+        <div class="percent-item">4</div>
+        <div class="percent-item">5</div>
+        <div class="percent-item">6</div>
+      </div>
+
+      <h2>fr Units</h2>
+      <div class="grid fr-units">
+        <div class="fr-item">1</div>
+        <div class="fr-item">2</div>
+        <div class="fr-item">3</div>
+        <div class="fr-item">4</div>
+        <div class="fr-item">5</div>
+        <div class="fr-item">6</div>
+      </div>
+      <h2>Auto</h2>
+      <div class="grid auto">
+        <div class="auto-item">1</div>
+        <div class="auto-item">2</div>
+        <div class="auto-item">3</div>
+        <div class="auto-item">4</div>
+        <div class="auto-item">5</div>
+        <div class="auto-item">6</div>
+      </div>
+      <h2>MinMax</h2>
+      <div class="grid min-max">
+        <div class="minmax-item">1</div>
+        <div class="minmax-item">2</div>
+        <div class="minmax-item">3</div>
+        <div class="minmax-item">4</div>
+        <div class="minmax-item">5</div>
+        <div class="minmax-item">6</div>
+      </div>
+
+      <h2>repeat(3.1fr)</h2>
+      <div class="grid repeat">
+        <div class="repeat-item">1</div>
+        <div class="repeat-item">2</div>
+        <div class="repeat-item">3</div>
+        <div class="repeat-item">4</div>
+        <div class="repeat-item">5</div>
+        <div class="repeat-item">6</div>
+      </div>
+
+      <h2>repeat(auto-fill, minmax(200px, 1fr))</h2>
+      <div class="grid repeat-auto">
+        <div class="repeat-item">1</div>
+        <div class="repeat-item">2</div>
+        <div class="repeat-item">3</div>
+        <div class="repeat-item">4</div>
+        <div class="repeat-item">5</div>
+        <div class="repeat-item">6</div>
+        <div class="repeat-item">7</div>
+        <div class="repeat-item">8</div>
+      </div>
+
+      <h2>fr-units with different proportions</h2>
+      <div class="grid fr-ratio">
+        <div class="fr-item">1</div>
+        <div class="fr-item">2</div>
+        <div class="fr-item">3</div>
+        <div class="fr-item">4</div>
+        <div class="fr-item">5</div>
+        <div class="fr-item">6</div>
+      </div>
+
+      <h2>Gap Property</h2>
+      <div class="grid gap">
+        <div class="gap-item">1</div>
+        <div class="gap-item">2</div>
+        <div class="gap-item">3</div>
+        <div class="gap-item">4</div>
+        <div class="gap-item">5</div>
+        <div class="gap-item">6</div>
+      </div>
+    </main>
+  </body>
+</html>
