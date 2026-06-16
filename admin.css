@@ -1,0 +1,94 @@
+:root {
+  --header-color: #f7b5c9;
+  --sidebar-colr: #b8f0b8;
+  --card-color: #d8f7d9;
+  --chart-color: #e9f5ce;
+  --panel1-color: #bcecff;
+  --panel2-color: #fff2a8;
+
+  --text-color: #333;
+}
+.dashboard {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  min-height: 98vh;
+}
+header {
+  grid-area: header;
+  background-color: var(--header-color);
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: var(--sidebar-colr);
+  padding: 20px;
+}
+.main {
+  grid-area: main;
+  display: grid;
+  gap: 10px;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "stats stats"
+    "chart chart"
+    "panel1 panel2";
+}
+.stats {
+  grid-area: stats;
+
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  background: var(--card-color);
+  padding: 20px;
+}
+.chart {
+  grid-area: chart;
+  background: var(--chart-color);
+  padding: 20px;
+}
+.panel1 {
+  grid-area: panel1;
+  background: var(--panel1-color);
+  padding: 20px;
+}
+.panel2 {
+  grid-area: panel2;
+  background: var(--panel2-color);
+  padding: 20px;
+}
+@media (max-width: 1024px) {
+  .dashboard {
+    grid-template-columns: 60px 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main";
+  }
+  .main{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "stats"
+    "chart"
+    "panel1"
+    "panel2";
+  }
+  .stats{
+    grid-template-columns: 1fr;
+  }
+}
