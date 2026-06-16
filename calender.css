@@ -1,0 +1,97 @@
+:root {
+  --header-color: #475569;
+  --day-color: #fdfbfb;
+  --event-color: #e9d5ff;
+  --today-color: #fbcfe8;
+  --first-day-color: #bfdbfe;
+  --border-color: #cbd5e1;
+  --text-color: #000000;
+  --week-color: #dcfce7;
+  --week-text-color: #166534;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.calender {
+  display: grid;
+  grid-template-columns: 60px repeat(7, 1fr);
+  gap: 10px;
+  min-height: 50vh;
+}
+
+.header,
+.day,
+.today,
+.first-day,
+.event ,
+.week{
+  padding: 5px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  border-radius: 8px;
+  color:var(--text-color);
+}
+.header {
+  background: var(--header-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  background: var(--day-color);
+  color: var(--text-dark);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.today::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(161, 69, 27);
+}
+
+.today {
+  background: var(--today-color);
+}
+
+.first-day {
+  background: var(--first-day-color);
+  grid-column:4;
+}
+
+.event {
+  background: var(--event-color);}
+.week {
+  background-color: var(--week-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+@media(max-width:480px){
+    .calender{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .header{
+        display: none;
+    }
+    .week{
+        margin-top: 20px;
+        background: #ddd;
+    }
+    .day{
+        margin-bottom:5px ;
+    }
+
+}
+
