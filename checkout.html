@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Product Shipping - Checkout Form</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <h1>Shipment Form</h1>
+    <main>
+      <p>Fields marked * are required.</p>
+      <form>
+        <fieldset>
+          <legend>Shipping Information</legend>
+          <div class="name-row">
+            <div>
+              <label for="fist-name"><b>First Name*</b></label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+            <div>
+              <label for="last-name"><b>Last Name*</b></label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+          </div>
+          <br />
+          <div>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <br />
+          <div>
+            <label for="addr-line1"><b>Address Line 1*</b></label>
+            <input type="text" id="addr-line1" name="Address-Line-1" required />
+          </div>
+          <div>
+            <label for="addr-line2"><b>Address Line 2*</b></label>
+            <input type="text" id="addr-line2" name="Address-Line-2" required />
+          </div>
+          <br />
+          <div>
+            <label for="city"><b>City*</b></label>
+            <input type="text" id="city" name="City" required />
+          </div>
+          <div>
+            <label for="state"><b>State*</b></label>
+            <input type="text" id="state" name="State" required />
+          </div>
+          <br />
+          <div>
+            <label for="pin"><b>Pin Code:*</b></label>
+            <input
+              type="text"
+              id="pin"
+              name="pin-code"
+              required
+              maxlength="6"
+            />
+          </div>
+          <div>
+            <label for="country"><b>Country*</b></label>
+            <select name="Country" id="country" required>
+              <option value="">--Select Your Country--</option>
+              <option value="Australia">Australia</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Canada">Canada</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Egypt">Egypt</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="India">India</option>
+              <option value="Japan">Japan</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Norway">Norway</option>
+              <option value="Peru">Peru</option>
+              <option value="Qatar">Qatar</option>
+              <option value="Russia">Russia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Turkey">Turkey</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="United States">United States</option>
+              <option value="Vietnam">Vietnam</option>
+            </select>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Payment Details</legend>
+          <div>
+            <label for="card-name"><b>Name On Card:</b></label>
+            <input type="text" id="card-name" name="name-on-card" />
+          </div>
+          <div>
+            <label for="card-number"><b>Card Number*</b></label>
+            <input
+              type="text"
+              id="card-number"
+              name="card=number"
+              maxlength="16"
+              required
+            />
+          </div>
+          <br />
+          <div class="card-row">
+            <div>
+              <label for="expiry-date"><b>Expiry Date(Month and Year)*</b></label>
+              <input
+                type="month"
+                name="expiry-date"
+                id="expiry-date"
+                required
+              />
+            </div>
+            <div>
+              <label for="cvv"><b>CVV*</b></label>
+              <input
+                type="password"
+                name="cvv"
+                id="cvv"
+                maxlength="4"
+                required
+                aria-describedby="cvv-help"
+              />
+              <p id="cvv-help">
+                <small>
+                  <b>CVV is the 3 or 4 digits on the back of your card .</b>
+                </small>
+              </p>
+            </div>
+          </div>
+          <br />
+          <div>
+            <label for="order-notes"><b>Order Notes:</b></label>
+            <textarea
+              name="order-notes"
+              id="order-notes"
+              maxlength="500"
+              rows="5"
+              cols="50"
+            ></textarea>
+          </div>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Billing Address</legend>
+          <input
+            type="checkbox"
+            checked="checked"
+            name="billing-address"
+            id="billing-addr"
+          />
+          <label for="billing-addr">Same as shipping address</label>
+        </fieldset>
+        <br />
+        <div class="button-row">
+          <button type="submit"><b>Place Order</b></button>
+          <button type="reset"><b>Cancel</b></button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
