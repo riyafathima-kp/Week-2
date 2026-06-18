@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Only Interactive Components</title>
+    <link rel="stylesheet" href="interactive.css" />
+  </head>
+  <body>
+    <h1>CSS Only Interactive Components</h1>
+    <section>
+      <h2>Accordion</h2>
+      <div class="accordion">
+        <input type="checkbox" id="html" />
+        <label for="html">What is HTML?</label>
+        <div class="content">HTML stands for HyperText Markup Language.</div>
+      </div>
+      <div class="accordion">
+        <input type="checkbox" id="css" />
+        <label for="css">What is CSS?</label>
+        <div class="content">CSS stands for Cascading Style Sheets.</div>
+      </div>
+
+      <div class="accordion">
+        <input type="checkbox" id="js" />
+        <label for="js">What is JS?</label>
+        <div class="content">
+          JavaScript adds interactivity and dynamic behaviour to webpages.
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Tabs</h2>
+      <input type="radio" name="tabs" id="tab1" checked />
+      <input type="radio" name="tabs" id="tab2" />
+      <input type="radio" name="tabs" id="tab3" />
+
+      <div class="tab-buttons">
+        <label for="tab1">HTML</label>
+        <label for="tab2">CSS</label>
+        <label for="tab3">JavaScript</label>
+      </div>
+
+      <div class="tab-content">
+        <div class="panel panel1">HTML creates the structure of webpages.</div>
+        <div class="panel panel2">
+          CSS is responsible for the design and appearence.
+        </div>
+        <div class="panel panel3">
+          JavaScript adds funtionality and interactivity.
+        </div>
+      </div>
+    </section>
+    <section>
+        <h2>Rate this Tutorial</h2>
+        <div class="rating"> 
+            <input type="radio" id="star5" name="rating">
+            <label for="star5">&#9733;</label>    
+            <input type="radio" id="star4" name="rating">
+            <label for="star4">&#9733;</label>   
+            <input type="radio" id="star3" name="rating">
+            <label for="star3">&#9733;</label>  
+            <input type="radio" id="star2" name="rating">
+            <label for="star2">&#9733;</label>   
+            <input type="radio" id="star1" name="rating">
+            <label for="star1">&#9733;</label>       
+        </div>
+    </section>
+  </body>
+</html>
