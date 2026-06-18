@@ -1,0 +1,42 @@
+.product-grid{
+    display: grid;
+    gap: 10px;
+    grid-template-columns:repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+}
+.product{
+    background: pink;
+    padding: 20px;
+    border-radius: 6px;
+}
+.featured{
+    background: #534caf;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.last-item{
+    background: #9CAF88;
+    grid-column: auto/-1;
+}
+.grid-container {
+    display: grid;
+    gap: 20px;
+}       
+
+.auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.auto-fit{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     padding: 20px;
+}
+.grid-item{
+    background: #a384f3;
+    height: 50px;
+    border-radius: 6px;
+}
+.grid-element{
+    background: #b1eba9;
+    height: 50px;
+    border-radius: 6px;
+}
