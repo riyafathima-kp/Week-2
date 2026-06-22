@@ -1,0 +1,96 @@
+body {
+  margin-left: 100px;
+}
+.box {
+  width: 150px;
+  height: 80px;
+  background: #ffb3c6;
+
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+}
+.linear {
+  transition: width 1s linear;
+}
+
+.ease {
+  transition: width 1s ease;
+}
+
+.ease-in {
+  transition: width 1s ease-in;
+}
+
+.ease-out {
+  transition: width 1s ease-out;
+}
+
+.ease-in-out {
+  transition: width 1s ease-in-out;
+}
+.box:hover {
+  width: 300px;
+}
+
+.bounce-btn {
+  background: #f5a1ae;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+}
+.bounce-btn:hover {
+  scale: 2;
+  transition: scale 1s cubic-bezier(0, 1, 0.8, 1.3);
+}
+.card {
+  width: 300px;
+  padding: 25px;
+  background-color: #ffe5ec;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.card h3,
+.card p {
+  transition: 0.4s ease-out;
+}
+.card p {
+  transition-delay: 300ms;
+}
+.card button {
+  padding: 10px;
+  border: none;
+  background-color: #a3a4f1;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card:hover h3 {
+  color: #e63946;
+  transform: translateX(5px);
+}
+.card:hover p {
+  color: #457b9d;
+  transform: translateX(5px);
+}
+.card button:hover {
+  transform: translateY(5px);
+}
+input {
+  width: 300px;
+  margin-top: 10px;
+  padding: 16px;
+  border: 2px solid grey;
+  border: 6px;
+  outline: none;
+  transition: outline-offset 0.3s ease;
+}
+input:focus {
+  outline: 3px solid pink;
+  outline-offset: 10px;
+}
