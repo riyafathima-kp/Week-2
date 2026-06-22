@@ -16,24 +16,22 @@ h5 {
 h6 {
   font-size: clamp(1rem, 0.8rem + 1vw, 1.2rem);
 }
-.cards{
-    display: grid;
-    gap: clamp(1rem, 3vw, 3rem);
-    grid-template-columns: 1fr 1fr;
-    container-type: inline-size;
+.cards {
+  display: grid;
+  gap: clamp(1rem, 3vw, 3rem);
+  grid-template-columns: 1fr 1fr;
+  container-type: inline-size;
 }
 
-.card{
-    background:#ffdce6;
-    border: 2px soild #f2b7c8;
-    border-radius: 10px;
-    padding: clamp(1rem, 3vw, 3rem);
-
+.card {
+  background: #ffdce6;
+  border: 2px soild #f2b7c8;
+  border-radius: 10px;
+  padding: clamp(1rem, 3vw, 3rem);
 }
 
-@container (min-width:500px){
-    .card{
-        background: #ffe6b3;
-    }
-
+@container (min-width:500px) {
+  .card {
+    background: #ffe6b3;
+  }
 }
